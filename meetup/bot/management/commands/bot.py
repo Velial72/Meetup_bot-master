@@ -133,7 +133,7 @@ def start(message):
         markup.add(timeline, timeline2, send_message)
         bot.send_message(message.chat.id, '\nпосмотрим расписание?\n', reply_markup=markup)
 
-    elif get_name(message) == 2: # добавить сравнение времени спикера и текущего времени
+    elif get_name(message) == 1: # добавить сравнение времени спикера и текущего времени
         markup = types.InlineKeyboardMarkup(row_width=1)
         questions = types.InlineKeyboardButton('Вопросы слушателей', callback_data='questions')
         timeline = types.InlineKeyboardButton('График выступлений', callback_data='timeline')
